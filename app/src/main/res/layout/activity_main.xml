@@ -1,51 +1,221 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android = "http://schemas.android.com/apk/res/android"
     xmlns:tools = "http://schemas.android.com/tools"
     android:layout_width = "match_parent"
     android:layout_height = "match_parent"
     android:orientation = "vertical"
+    android:weightSum = "4"
     tools:context = ".MainActivity" >
 
     <EditText
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
-        android:layout_margin = "8dp" />
+        android:layout_margin = "16dp"
+        android:gravity = "end"
+        android:hint = "@string/_0"
+        android:inputType = ""
+        android:padding = "8dp"
+        android:textAlignment = "gravity"
+        android:textSize = "30sp"
+        android:textStyle = "bold" />
 
     <LinearLayout
+        android:layout_height = "wrap_content"
         android:layout_width = "match_parent"
-        android:layout_height = "match_parent"
+        android:layout_alignParentBottom = "true"
         android:layout_margin = "8dp"
         android:background = "@color/colorAccent"
-        android:orientation = "vertical" >
+        android:orientation = "vertical"
+        android:padding = "8dp"
+        >
 
         <LinearLayout
             android:layout_width = "match_parent"
-            android:layout_height = "100dp"
-            android:layout_margin = "8dp"
-            android:background = "@color/colorPrimary"
+            android:layout_height = "wrap_content"
             android:orientation = "horizontal"
             android:weightSum = "8" >
 
             <Button
+                style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
-                android:layout_weight = "2" />
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_one"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
 
             <Button
+                style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
-                android:layout_weight = "2" />
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_two"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
 
             <Button
+                style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
-                android:layout_weight = "2" />
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_three"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
 
             <Button
+                style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
-                android:layout_weight = "2" />
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_divide"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal"
+            android:weightSum = "8" >
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_four"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_five"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_six"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_minus"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal"
+            android:weightSum = "8" >
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_seven"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_eight"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_nine"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_sum"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+        </LinearLayout >
+
+        <LinearLayout
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:orientation = "horizontal"
+            android:weightSum = "8" >
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_clear"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_zero"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_dot"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
+
+            <Button
+                style = "@style/Widget.AppCompat.Button"
+                android:layout_width = "wrap_content"
+                android:layout_height = "75dp"
+                android:layout_margin = "4dp"
+                android:layout_weight = "2"
+                android:text = "@string/button_equal"
+                android:textSize = "30sp"
+                android:textStyle = "bold" />
         </LinearLayout >
     </LinearLayout >
-</LinearLayout >
+</RelativeLayout >
