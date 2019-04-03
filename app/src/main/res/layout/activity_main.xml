@@ -9,9 +9,16 @@
     tools:context = ".MainActivity" >
 
     <EditText
+        android:id = "@+id/editTxt"
         android:layout_width = "match_parent"
         android:layout_height = "wrap_content"
         android:layout_margin = "16dp"
+        android:layout_marginStart = "16dp"
+        android:layout_marginLeft = "16dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "16dp"
+        android:layout_marginRight = "16dp"
+        android:layout_marginBottom = "16dp"
         android:gravity = "end"
         android:hint = "@string/_0"
         android:inputType = ""
@@ -25,7 +32,6 @@
         android:layout_width = "match_parent"
         android:layout_alignParentBottom = "true"
         android:layout_margin = "8dp"
-        android:background = "@color/colorAccent"
         android:orientation = "vertical"
         android:padding = "8dp"
         >
@@ -37,31 +43,37 @@
             android:weightSum = "8" >
 
             <Button
+                android:id = "@+id/btn1"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_one"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
 
             <Button
+                android:id = "@+id/btn2"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_two"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
 
             <Button
+                android:id = "@+id/btn3"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_three"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
@@ -84,31 +96,37 @@
             android:weightSum = "8" >
 
             <Button
+                android:id = "@+id/btn4"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_four"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
 
             <Button
+                android:id = "@+id/btn5"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_five"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
 
             <Button
+                android:id = "@+id/btn6"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_six"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
@@ -131,31 +149,37 @@
             android:weightSum = "8" >
 
             <Button
+                android:id = "@+id/btn7"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_seven"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
 
             <Button
+                android:id = "@+id/btn8"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_eight"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
 
             <Button
+                android:id = "@+id/btn9"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_nine"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
@@ -178,6 +202,7 @@
             android:weightSum = "8" >
 
             <Button
+                android:id = "@+id/CBtn"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
@@ -185,14 +210,17 @@
                 android:layout_weight = "2"
                 android:text = "@string/button_clear"
                 android:textSize = "30sp"
+                android:onClick = "operationFunctions"
                 android:textStyle = "bold" />
 
             <Button
+                android:id = "@+id/btn0"
                 style = "@style/Widget.AppCompat.Button"
                 android:layout_width = "wrap_content"
                 android:layout_height = "75dp"
                 android:layout_margin = "4dp"
                 android:layout_weight = "2"
+                android:onClick = "operationFunctions"
                 android:text = "@string/button_zero"
                 android:textSize = "30sp"
                 android:textStyle = "bold" />
